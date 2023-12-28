@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    text-align: center;
+    background-color: #EDF6F9;
+}
+
+h1 {
+    text-transform: capitalize;
+    color: #EDF6F9;
+    background-color: #081b31;
+    font-size: 2.5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#choices {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.choice {
+    height: 9.6rem;
+    width: 9.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #081b31;
+}
+
+img {
+    height: 9rem;
+    width: 9rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    font-size: 2rem;
+    color: #081b31;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.total-score {
+    font-size: 4rem;
+}
+
+.total-score:hover {
+    cursor: pointer;
+    color: #284b63;
+}
+
+.msg-container {
+    margin: 4rem 0 0;
+}
+
+#msg {
+    color: #ff5125;
+    background-color: #264653;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0.5rem 1.5rem;
+    border: 3px solid transparent;
+    border-radius: 0.5rem 1rem;
+    display: inline;
+}
+
+#msg:hover {
+    border-color: #ff5125;
+}
