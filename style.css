@@ -75,7 +75,7 @@ img {
 }
 
 #msg {
-    color: #ff5125;
+    color: #ff5125; /* #E76F51 */
     background-color: #264653;
     font-size: 2.5rem;
     font-weight: bold;
@@ -88,4 +88,5 @@ img {
 
 #msg:hover {
     border-color: #ff5125;
+    cursor: pointer;
 }
