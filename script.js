@@ -14,7 +14,6 @@ const generateComputerChoice = () => {
 };
 
 const drawGame = () => {
-  // console.log("Game was draw");
   msg.innerHTML = "Game was draw";
   msg.style.backgroundColor = "#264653";
 };
@@ -23,23 +22,19 @@ const showWinner = (userWin, userChoice, compChoice) => {
   if (userWin) {
     userScore++;
     userScorePara.innerHTML = userScore;
-    // console.log("You Win!");
     msg.innerHTML = `You win! Your ${userChoice} beats ${compChoice}`;
     msg.style.backgroundColor = "green";
   } else {
     compScore++;
     compScorePara.innerText = compScore;
-    // console.log("You lose!");
     msg.innerHTML = `You lose! Comp ${compChoice} beats ${userChoice}`;
     msg.style.backgroundColor = "red";
   }
 };
 
 const playGame = (userChoice) => {
-  // console.log("User Choice = ", userChoice);
   // Generate Computer Choice
   const compChoice = generateComputerChoice();
-  // console.log("Computer Choise = ", compChoice);
 
   if (userChoice === compChoice) {
     // Draw Game
@@ -61,10 +56,8 @@ const playGame = (userChoice) => {
 };
 
 choices.forEach((choice) => {
-  //   console.log(choice);
   choice.addEventListener("click", () => {
     const userChoice = choice.getAttribute("id");
-    // console.log(`Choice was clicked, ${userChoice}`);
     playGame(userChoice);
   });
 });
