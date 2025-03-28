@@ -18,7 +18,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-family: cursive;
+    text-transform: capitalize;
 }
 
 #choices {
@@ -40,7 +41,7 @@ h1 {
 
 .choice:hover {
     cursor: pointer;
-    background-color: #081b31;
+    background-color: #0b405a;
 }
 
 img {
@@ -81,12 +82,15 @@ img {
     font-weight: bold;
     text-transform: capitalize;
     padding: 0.5rem 1.5rem;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     border-radius: 0.5rem 1rem;
     display: inline;
 }
 
 #msg:hover {
-    border-color: #ff5125;
+    border-color: #4a4e69;
     cursor: pointer;
+    color: #264653;
+    box-shadow: 4px 6px 4px #264653;
+    background-color: transparent;
 }
